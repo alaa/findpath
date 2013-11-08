@@ -9,7 +9,7 @@ class Moves
   Done  = 'o'
 
   attr_accessor :current_level, :current_position
-  Set = %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).each_slice(Slice).to_a
+  Set = ('a'..'z').to_a.each_slice(Slice).to_a
 
   def initialize
     self.current_level    = 0
