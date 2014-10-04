@@ -30,12 +30,12 @@ class Moves
     level = 0
     Set.each do |row|
       if row.include?(letter)
-        @l = level
-        @p = row.index(letter)
+        l = level
+        p = row.index(letter)
       end
       level += 1
     end
-    [@l,@p]
+    [l,p]
   end
 
   def step_to(level, position)
